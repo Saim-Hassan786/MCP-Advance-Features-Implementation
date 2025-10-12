@@ -9,7 +9,7 @@ They act as safety and scoping constructs: servers request the root listing, and
 ### Specification & Capabilities  
 - Clients declare a `roots` capability during handshake (e.g. `"roots": { "listChanged": true }`)  
 - Servers issue requests using the `roots/list` method to learn which roots the client has exposed.  
-- Clients may emit notifications (`notifications/roots/list_changed`) if the set of roots changes.  
+- Clients may emit notifications (`notifications/roots/list_changed`) if the set of roots changes. 
 - A root object includes:
   - `uri` (a `file://` URI)  
   - Optional `name` for display  
@@ -164,3 +164,4 @@ While stateful mode unlocks full MCP capability, many deployment environments fa
 - **Roots & Transport**: The server may push root updates via notifications if using stateful transport; in stateless mode, changes may be pulled.  
 - **Sampling & Transport**: Sampling requires server-to-client requests, so it is only viable in stateful / streaming contexts.  
 - **Progress & Transport**: Live progress updates depend
+
