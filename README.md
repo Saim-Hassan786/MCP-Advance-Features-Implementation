@@ -165,3 +165,4 @@ While stateful mode unlocks full MCP capability, many deployment environments fa
 - **Sampling & Transport**: Sampling requires server-to-client requests, so it is only viable in stateful / streaming contexts.  
 - **Progress & Transport**: Live progress updates depend
 
+
